@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewRes"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    //imgRes,txtRes,txtAddrRes,nbRes,btnSelRes
+        <LinearLayout
+            android:id="@+id/btnRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/imgRes"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/background"
+                android:scaleType="centerCrop"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtRes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Restautant 1"
+                    android:textSize="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtAddrRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ngõ 42 kiệt 27 Ngụ Bình"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/nbRes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0123456789"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+        </LinearLayout>
+
+</RelativeLayout>

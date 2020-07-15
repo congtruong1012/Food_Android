@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/kanit_medium"
+
+        android:text="Lịch sử đặt món"
+        android:textColor="#3f4658"
+        android:textSize="38dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/thongbao"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:textSize="30dp"-->
+<!--        android:text="Bạn chưa đặt hàng lần nào"-->
+<!--        android:gravity="center"-->
+<!--        android:textStyle="bold"/>-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_Order_History"
+        android:layout_below="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"/>
+</RelativeLayout>
